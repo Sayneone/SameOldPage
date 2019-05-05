@@ -1,0 +1,110 @@
+// Header
+.header {
+    height: 94px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    z-index: 100;
+
+    &__logo {
+        margin-right: 60px;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+.nav {
+    &__list {
+        display: flex;
+        justify-items: center;
+        font-family: 'Ubuntu';
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+        list-style: none;
+    }
+
+    &__item {
+        margin-right: 18px;
+        &:before {
+            content: "•";
+            margin-right: 11px;
+            color: white;
+        }
+        &:first-child::before {
+            display:none;
+        }   
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+     }
+}
+
+.order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 97px;
+    height: 36px;
+    background-color: #e45028;
+    border-radius: 7px;
+
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+}
+
+.aside {
+    position: fixed;
+    right: 15%;
+    top: 12%;
+    z-index: 100;
+    &__item {
+        margin: 0 0 7px 0;
+        border: 1px solid;
+        border-radius: 50px;
+        border-color: transparent;
+        &:hover {
+            border-color: white;
+        }
+    }
+    
+    .active {
+        border-color: white;
+    }
+
+    &__link {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+
+        display: block;
+
+        position: relative;
+        &::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: white;
+
+            display: block;
+            z-index: 100;
+
+            position: absolute;
+            bottom: 50%;
+            right: 50%;
+            transform: translate(50%, 50%);
+        }
+    }
+}

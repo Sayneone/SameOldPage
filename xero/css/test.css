@@ -1,0 +1,62 @@
+
+
+
+.pogoSlider-slide:parent
+{
+	perspective: 1000px;
+}
+
+
+.pogoSlider-slide
+{
+	border: 5px solid black;
+	border-radius: 15px;
+	box-shadow: 0 20px 20px -5px grey;
+	transform: rotate(20deg) scale(0.5) rotateY(1deg) ;
+}
+
+.pogoSlider-slide:hover
+{
+	transform: scale(0.9) rotateY(10deg) ;
+}
+
+#menu
+{
+	background-color: rgba(22, 123, 88, 0.9);
+}
+
+.zen-menu 
+{
+	
+}
+
+.zen-menu-horizontal 
+{
+	
+}
+
+.zen-menu-center zen-menu-zoom
+{
+	
+}
+
+body
+{
+	background-image: url(../../org.png);
+}
+
+.item108 {
+	color: pink;
+}
+
+#logo::after {
+	content: '';
+	min-width: 100px;
+	min-height: 100px;
+	/* width: 100px; */
+	/* height: 100px; */
+	background-image:  url(../../org.png);
+	z-index: 100;
+	position: absolute;
+	display: block;
+}

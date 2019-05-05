@@ -1,0 +1,73 @@
+// Section "feeds"
+
+.feeds {
+    &__container  {
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+
+    &__item {
+        width: 25%;
+        height: 100vh;
+        filter: grayscale(1);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+    &__item-inner {
+        display:none;
+        filter: grayscale(2);
+        transition: 1;
+        color: white;
+        width: 100%;
+        height: 100%;
+
+        padding: 50px 20px 50px;
+        &before {
+            content: "";
+            background-color: black;
+            opacity: 0.5;
+        }
+    }
+
+    &__item-title {
+        font-family: 'Gagalin';
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    &__item:hover .feed__item-inner {
+        display: block;
+    }
+    
+
+}
+
+.feeds__item1 {
+    background-image: url(/img/feeds/photo-1458890715264-db84f7c6ef13.png)
+}
+.feeds__item2 {
+    background-image: url(/img/feeds/photo-1440606797942-6cc04c045447.png)
+}
+.feeds__item3 {
+    background-image: url(/img/feeds/photo-1445404590072-16ef9c18bd83.png)
+}
+.feeds__item4 {
+    background-image: url(/img/feeds/photo-1468546818829-25bb337b6646.png)
+}
+.feeds__item5 {
+    background-image: url(/img/feeds/photo-1438763298591-75a0d42b7265.png)
+}
+.feeds__item6 {
+    background-image: url(/img/feeds/photo-1461332682233-b818af4c3a6e.png)
+}
+.feeds__item7 {
+    background-image: url(/img/feeds/photo-1457706924510-773f3c796de3.png)
+}
+.feeds__item8 {
+    background-image: url(/img/feeds/photo-1458696765561-12142eaead13.jpg)
+}

@@ -1,0 +1,54 @@
+.section {
+  position: relative;
+  width: 100%;
+  height: 100vh; }
+
+.intro {
+  background-image: url(/img/index/index__background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh; }
+  .intro__inner {
+    height: calc(100% - 94px);
+    padding-bottom: 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .intro__pic {
+    padding-left: 20px;
+    width: 72%; }
+  .intro__text {
+    padding-top: 50px; }
+    .intro__text .intro-content__text-top {
+      font-family: 'Gagalin';
+      font-weight: 400;
+      font-size: 72px;
+      color: #f9b43b;
+      margin: 0px;
+      margin-bottom: 15px; }
+    .intro__text .intro-content__text-bottom {
+      font-family: 'Lifehack';
+      font-weight: 500;
+      font-size: 62px;
+      color: white;
+      margin: 0px;
+      line-height: 60px; }
+
+.arrow {
+  width: 29px;
+  height: 14px;
+  bottom: 50px;
+  position: absolute; }
+  .arrow__link {
+    background-image: url(/img/main/arrow-scroll.png);
+    background-size: 100%;
+    width: 29px;
+    height: 14px;
+    background-repeat: no-repeat; }
